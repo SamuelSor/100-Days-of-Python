@@ -23,12 +23,12 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-turn = input("There are two tunnels in front of you. Will you choose the left or right tunnel? ")
+turn = input("There are two tunnels in front of you. Will you choose the left or right tunnel? ").lower
 
 if turn == "left":
-    swim = input("You appear at a lake. You can either swim across or go around the long way. Would you like to swim? Y or N?")
-    if swim == "Y":
-        door_color= input("After reaching the other side of the lake, you see 3 colored doors and a sign saying to enter one. What door do you want to enter? blue, red or yellow?")
+    swim = input("You appear at a lake. You can either swim across or go around the long way. Would you like to swim? Y or N?").lower
+    if swim == "y":
+        door_color= input("After reaching the other side of the lake, you see 3 colored doors and a sign saying to enter one. What door do you want to enter? blue, red or yellow?").lower
 
         if door_color == "yellow":
             print("You made it to the treasure! You win!!")
