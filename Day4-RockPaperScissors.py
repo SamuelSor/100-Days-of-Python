@@ -1,4 +1,3 @@
-from filecmp import clear_cache
 import random
 rock = '''
     _______
